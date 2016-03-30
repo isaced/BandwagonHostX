@@ -16,6 +16,7 @@
 		0B11D2851CAB77B000BBFA87 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B11D2841CAB77B000BBFA87 /* IndexViewController.swift */; };
 		0B11D2861CAB77B000BBFA87 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B11D2841CAB77B000BBFA87 /* IndexViewController.swift */; };
 		0B11D2871CAB77B000BBFA87 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B11D2841CAB77B000BBFA87 /* IndexViewController.swift */; };
+		0BC3470A1CAB7C8D001C70A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC347091CAB7C8D001C70A2 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0B11D2751CAB77A300BBFA87 /* BandwagonHostXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandwagonHostXUITests.swift; sourceTree = "<group>"; };
 		0B11D2771CAB77A300BBFA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B11D2841CAB77B000BBFA87 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		0BC347091CAB7C8D001C70A2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC3470A1CAB7C8D001C70A2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		0B11D2541CAB77A300BBFA87 /* BandwagonHostX */ = {
 			isa = PBXGroup;
 			children = (
+				0BC3470B1CAB7C97001C70A2 /* Frameworks */,
 				0B11D2831CAB77B000BBFA87 /* ViewControllers */,
 				0B11D2551CAB77A300BBFA87 /* AppDelegate.swift */,
 				0B11D2591CAB77A300BBFA87 /* Main.storyboard */,
@@ -133,6 +137,14 @@
 				0B11D2841CAB77B000BBFA87 /* IndexViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0BC3470B1CAB7C97001C70A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BC347091CAB7C8D001C70A2 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BandwagonHostX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,6 +440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BandwagonHostX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +517,7 @@
 				0B11D27C1CAB77A300BBFA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B11D27D1CAB77A300BBFA87 /* Build configuration list for PBXNativeTarget "BandwagonHostXTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +526,7 @@
 				0B11D27F1CAB77A300BBFA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B11D2801CAB77A300BBFA87 /* Build configuration list for PBXNativeTarget "BandwagonHostXUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +535,7 @@
 				0B11D2821CAB77A300BBFA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
